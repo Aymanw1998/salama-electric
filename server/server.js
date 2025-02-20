@@ -62,8 +62,8 @@ const httpServer = http.createServer(app)
 const PORT = process.env.PORT || 5000;
 const NODE_ENV = process.env.NODE_ENV;
 httpServer.listen(
-  PORT,'0.0.0.0',
- //console.log(`Server running in ${NODE_ENV} mode on port ${PORT}`.blue.bold)
+  PORT,
+ console.log(`Server running in ${NODE_ENV} mode on port ${PORT}`.blue.bold)
 );
 
 //Handle unhandled promise rejections
