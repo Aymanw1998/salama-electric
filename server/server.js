@@ -51,7 +51,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 // Route middleware
-app.get('/', (req, res) => {//console.log("Server is up and running");res.send('Server is up and running'); });
+app.get('/', (req, res) => {console.log("Server is up and running");res.send('Server is up and running'); });
 
 
 //must be after routes call
