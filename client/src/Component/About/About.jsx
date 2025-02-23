@@ -80,7 +80,7 @@ const About = () => {
                 <h2>מספר רישיון <b style={{color: "yellow"}}>1004425</b></h2>
                 <h2>{"<מקצועיות, אמינות>"}</h2>
                 <h2>עובדים באיזור המרכז</h2>
-                <h1 style={{textAlign: "center", color: "yellow" }}>נתקלת בתקלת חשמל? אנחנו כאן לשירות</h1>
+                <h1 style={{textAlign: "center", color: "yellow" }}>נתקלת בתקלת חשמל? אנחנו כאן לשירותכם</h1>
             <br/>
             <div className="buttons-wrapper">
                 <a href={`tel:${phoneNumber}`} className="call-button" aria-label="התקשר עכשיו">
