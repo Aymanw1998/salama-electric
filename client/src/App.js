@@ -5,7 +5,6 @@ import Header from './Component/Header/Header';
 import Footer from './Component/Footer/Footer';
 import ListImages from './Component/ListImages/ListImages';
 import { useMediaQuery } from '@mui/material';
-
 function App() {
   const isMobile = useMediaQuery('(max-width:600px)');
 
@@ -13,9 +12,7 @@ function App() {
     <div className="App">
       {!isMobile && <Header/>}
       <About/>
-      <hr/>
       <ListImages/>
-      <hr/>
       <ListPost/>
       <Footer/>
     </div>

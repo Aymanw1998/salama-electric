@@ -1,7 +1,9 @@
 import React from 'react';
 import { useMediaQuery } from '@mui/material';
-
 import "./About.css"
+
+import Card from "../Card/Card"
+
 import I1 from "../../images/proj-images/image1.jpeg"
 import I2 from "../../images/proj-images/image4.jpeg"
 import I3 from "../../images/I3.jpeg"
@@ -10,7 +12,7 @@ import I5 from "../../images/I5.jpg"
 import I6 from "../../images/I6.jpg"
 import I7 from "../../images/I7.jpg"
 import I8 from "../../images/I8.jpg"
-import I9 from "../../images/i9.jpg"
+import I9 from "../../images/I9.jpg"
 import I10 from "../../images/I10.jpg"
 
 import CALL from "../../images/call.png"
@@ -74,34 +76,11 @@ const About = () => {
                 {isMobile && <img src={LOGO} className="logo" alt=""/>}
                 <h1>SALAMA <span style={{color: "yellow"}}>ELECTRIC</span></h1>
                 <h2>חשמלאי מוסמך</h2>
+                <Card/>
                 <h2>מספר רישיון <b style={{color: "yellow"}}>1004425</b></h2>
                 <h2>{"<מקצועיות, אמינות>"}</h2>
                 <h2>עובדים באיזור המרכז</h2>
-                {/* <ul>
-                    <span>{"1. איתור קצרים"}</span>
-                    <div>{"2. החלפת לוחות חשמל"}</div>
-                    <div>{"3. הגדלות מול חברת חשמל"}</div>
-                    <div>{"4. ביקורת חברת חשמל"}</div>
-                    <div>{"5. התקנת גופי תאורה"}</div>
-                    <div>{"6. הוספת נקודות חשמל"}</div>
-                    <div>{"7. ביצוע כל עבודו החשמל"}</div>
-                    <div>{"8. התקנת עמדת עבודה חשמליות"}</div>
-                    <div>{"9. התקנת עמדות טעינה לרכבים חשמליים"}</div>
-                    <div>{"10. ידע חשמל תעשייתי"}</div>
-                </ul> */}
-            </div>
-            <h1 style={{textAlign: "center", color: "yellow" }}>השירותים שאנו מציעים</h1>
-            <div className="service-container">
-                {services.map((service, index) => (
-                    <div key={index} className="service-card">
-                        <img src={service.image} alt="service" />
-                        <div className="service-overlay">
-                            <h2 className="service-title">{service.title}</h2>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            <h1 style={{textAlign: "center", color: "yellow" }}>נתקלת בתקלת חשמל? אנחנו כאן לשירות</h1>
+                <h1 style={{textAlign: "center", color: "yellow" }}>נתקלת בתקלת חשמל? אנחנו כאן לשירות</h1>
             <br/>
             <div className="buttons-wrapper">
                 <a href={`tel:${phoneNumber}`} className="call-button" aria-label="התקשר עכשיו">
@@ -118,6 +97,19 @@ const About = () => {
                     <img src={FACEBOOK} alt="WhatsApp" />
                 </a>
             </div>
+            </div>
+            <h1 style={{textAlign: "center", color: "yellow" }}>השירותים שאנו מציעים</h1>
+            <div className="service-container">
+                {services.map((service, index) => (
+                    <div key={index} className="service-card">
+                        <img src={service.image} alt="service" />
+                        <div className="service-overlay">
+                            <h2 className="service-title">{service.title}</h2>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            
         </>
     );
 }

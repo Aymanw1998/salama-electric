@@ -1,0 +1,38 @@
+.image-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: linear-gradient(135deg, #f9f9f9, #ececec);
+    margin: 0 auto;
+  }
+  
+  .image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .image {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 3px solid yellow;
+  }
+  
+  .content {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+  }
+  
+  @media  screen and (min-width: 321px) and (max-width:960px){
+    .image-card { width: 45%;}
+  }
+  @media screen and (min-width: 720px){
+    .image-card { width: 15%;}
+  }
