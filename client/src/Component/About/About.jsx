@@ -75,10 +75,12 @@ const About = () => {
             <div className="bg-text">
                 {isMobile && <img src={LOGO} className="logo" alt=""/>}
                 <h1>SALAMA <span style={{color: "yellow"}}>ELECTRIC</span></h1>
-                <h2>חשמלאי מוסמך באזור מרכז</h2>
+                <h2>חשמלאי מוסמך 1004425</h2>
+                <h2>קבלן רשום 41349</h2>
+                <h2>באזור מרכז</h2>
                 <h2>חשמל ביתי ולוחות חשמל</h2>
                 <Card/>
-                <h2>מספר רישיון <b style={{color: "yellow"}}>1004425</b></h2>
+                {/* <h2>מספר רישיון <b style={{color: "yellow"}}>1004425</b></h2> */}
                 <h2>{"<מקצועיות, אמינות>"}</h2>
                 <h2>עובדים באזור מרכז</h2>
                 <h1 style={{textAlign: "center", color: "yellow" }}>נתקלת בתקלת חשמל? אנחנו כאן לשירותכם</h1>
