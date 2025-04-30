@@ -76,35 +76,12 @@
     text-align: center;
   }
 
-  /* להתקשר */
-  .call-button {
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 150px;
-    height: 100px;
-    background: transparent;
-    border: none !important;
-    border: none;
-    border-radius: 50px; /* יוצר צורה אליפטית */
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
-  }
-  
   .call-button img {
     width: 50px;
     height: 50px;
 
   }
-  
-  /* אפקט כשהעכבר מעל */
-  .call-button:hover {
-    transform: scale(1.5);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    background-color: #3de445;
-  }
+ 
   
   .contact-container {
     text-align: center;
@@ -159,6 +136,9 @@
   
   /* סגנון לכפתור וואטסאפ */
   .call-button[href^="https://facebook"] {
+    background: none; /* ירוק */
+  }
+  .call-button[href^="https://tiktok"] {
     background: none; /* ירוק */
   }
   
