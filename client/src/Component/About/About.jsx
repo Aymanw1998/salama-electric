@@ -19,6 +19,7 @@ import CALL from "../../images/call.png"
 import WHATSAPP from "../../images/Whatsapp.png" 
 import INSTAGRAM from "../../images/instagram.png"
 import FACEBOOK from "../../images/facebook.png"
+import TIKTOK from "../../images/Tiktok.png"
 
 import LOGO from "../../images/icon.png"
 const phoneNumber = "+972528948881"
@@ -92,11 +93,14 @@ const About = () => {
                     <img src={WHATSAPP} alt="WhatsApp" />
                 </a>
             
-                <a href={`https://instagram.com/muhamad_9807`} className="call-button" aria-label="התקשר עכשיו">
-                    <img src={INSTAGRAM} alt="Call" />
+                <a href={`https://instagram.com/salama_electric`} className="call-button" target="_blank">
+                    <img src={INSTAGRAM} alt="Instagram" />
                 </a>
-                <a href={`https://facebook.com/1593044809`} className="call-button" target="_blank" rel="noopener noreferrer" aria-label="שלח הודעה בוואטסאפ">
-                    <img src={FACEBOOK} alt="WhatsApp" />
+                <a href={`https://facebook.com/61556459012020`} className="call-button" target="_blank">
+                    <img src={FACEBOOK} alt="Facebook" />
+                </a>
+                <a href={`https://tiktok.com/@salama_electric`} className="call-button" target="_blank">
+                    <img src={TIKTOK} alt="Tiktok" />
                 </a>
             </div>
             </div>
