@@ -69,18 +69,18 @@ const ListPost = () => {
         const years = Math.floor(months / 12); // המרת זמן לשנים
         // בודק איזה יחידת זמן להחזיר
         if(years > 0) {
-            return `${years} y`;
+            return `${years} years`;
         } else if (months > 0) {
-            return `${months} m`;
+            return `${months} months`;
         }
         else if (weeks > 0) {
-            return `${weeks} w`;
+            return `${weeks} weeks`;
         } else if (days > 0) {
-            return `${days} d`;
+            return `${days} days`;
         } else if (hours > 0) {
-            return `${hours} h`;
+            return `${hours} hours`;
         } else if (minutes > 0) {
-            return `${minutes} min`;
+            return `${minutes} minutes`;
         } else {
             return `now`;
         }
