@@ -1,0 +1,26 @@
+.containerStyle {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+};
+
+.imageContainerStyle{
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(235, 27, 27, 0.1);
+  };
+
+.imageStyle {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px
+  };
+
+.thumbnailStyle {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: 'pointer'
+};

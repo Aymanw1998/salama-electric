@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
         <footer>
             <div className="copyright">
-                <p style={{fontSize: "24px"}}>Ayman Wahbani 2025 ©</p>
+                <p style={{fontSize: "24px"}}>DAC - Double A Code©</p>
             </div>
         </footer>
 	);
