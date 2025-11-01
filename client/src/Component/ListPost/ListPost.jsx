@@ -65,9 +65,15 @@ const ListPost = () => {
         const hours = Math.floor(minutes / 60); // המרת זמן לשעות
         const days = Math.floor(hours / 24); // המרת זמן לימים
         const weeks = Math.floor(days / 7); // המרת זמן לשבועות
-    
+        const months = Math.floor(weeks / 4); // המרת זמן לחודשים
+        const years = Math.floor(months / 12); // המרת זמן לשנים
         // בודק איזה יחידת זמן להחזיר
-        if (weeks > 0) {
+        if(years > 0) {
+            return `${years} y`;
+        } else if (months > 0) {
+            return `${months} m`;
+        }
+        else if (weeks > 0) {
             return `${weeks} w`;
         } else if (days > 0) {
             return `${days} d`;
